@@ -15,16 +15,16 @@ namespace maryplusjim.ui.Controllers
 
         public HomeController(IOptions<DbConfig> dbConfig)
         {
-            this.db = new DocumentDBRepository<WeddingContent>(dbConfig.Value);
+            //this.db = new DocumentDBRepository<WeddingContent>(dbConfig.Value);
         }
         public async Task<IActionResult> Index()
         {
             //var content = await Db.DocumentDBRepository<WeddingContent>.GetItemAsync("");
-            WeddingContent content;
-            try { content = await db.GetItemAsync(""); }
-            catch { content = WeddingContent.Default(); }
+            //WeddingContent content;
+            //try { content = await db.GetItemAsync(""); }
+            //catch { content = WeddingContent.Default(); }
 
-            return View(content);
+            return View(WeddingContent.Default());
         }
 
         public IActionResult Test()
