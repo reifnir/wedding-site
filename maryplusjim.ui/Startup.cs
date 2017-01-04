@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using maryplusjim.ui.Db;
+using maryplusjim.ui.Model;
 
 namespace maryplusjim.ui
 {
@@ -35,7 +37,7 @@ namespace maryplusjim.ui
         {
             // Add framework services.
             services.AddApplicationInsightsTelemetry(Configuration);
-
+            services.Configure<DbConfig>(Configuration.GetSection("Db"));
             services.AddMvc();
         }
 

@@ -3,14 +3,28 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using maryplusjim.ui.Model;
+using maryplusjim.ui.Db;
+using Microsoft.Extensions.Options;
 
 namespace maryplusjim.ui.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        DocumentDBRepository<WeddingContent> db;
+
+        public HomeController(IOptions<DbConfig> dbConfig)
         {
-            return View();
+            this.db = new DocumentDBRepository<WeddingContent>(dbConfig.Value);
+        }
+        public async Task<IActionResult> Index()
+        {
+            //var content = await Db.DocumentDBRepository<WeddingContent>.GetItemAsync("");
+            WeddingContent content;
+            try { content = await db.GetItemAsync(""); }
+            catch { content = WeddingContent.Default(); }
+
+            return View(content);
         }
 
         public IActionResult Test()
