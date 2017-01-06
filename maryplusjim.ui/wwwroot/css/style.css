@@ -35,7 +35,8 @@ Author:Denis Samardjiev
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
-    color: #A2A2A2;
+    color: #828282;
+    /*color: #A2A2A2;*/
     height: 100%;
     font-weight: 100;
     padding-top: 81px
