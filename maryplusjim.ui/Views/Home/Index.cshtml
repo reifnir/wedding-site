@@ -88,8 +88,8 @@
                             <li><a href="#registry" data-id="registry" class="scroll-link">Registry</a></li>
                             <li><a href="#faq" data-id="faq" class="scroll-link">FAQ</a></li>
                             @*<li class="nav-btn">
-                                <a data-toggle="modal" data-target="#rsvp-modal" class="btn btn-primary btn-lg">RSVP</a>
-                            </li>*@
+                                    <a data-toggle="modal" data-target="#rsvp-modal" class="btn btn-primary btn-lg">RSVP</a>
+                                </li>*@
                             <!--
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-menu-down"></span></a>
@@ -208,11 +208,11 @@
                 </div>
             </div>
             @for (var i = 1; i <= 3; i++)
-        {
-            var divClass = "item jumbotron-holder" + ((i == 1) ? " active" : "");
-            <div class="@divClass">
-                <div class="fill" style="background-image:url('@Url.Content("~/images/header-" + i + ".jpg")');"></div>
-            </div>
+            {
+                var divClass = "item jumbotron-holder" + ((i == 1) ? " active" : "");
+                <div class="@divClass">
+                    <div class="fill" style="background-image:url('@Url.Content("~/images/header-" + i + ".jpg")');"></div>
+                </div>
             }
 
             <!-- Slideshow Images -->
@@ -445,10 +445,10 @@
                     <h2 class="section-venue-title">Hotel Monaco</h2>
                     <p class="no-margin-bottom">433 Chestnut Street · Philadelphia, PA 19106</p>
                     @*<small>
-                        <em>
-                            <a class="popup-gmaps underline-link" href="https://maps.google.com/maps?q=433+Chestnut+Street,+Philadelphia+Pennsylvania&hl=en&t=v&hnear=433+Chestnut+Street,+Philadelphia+Pennsylvania">Open Map</a>
-                        </em>
-                    </small>*@
+                            <em>
+                                <a class="popup-gmaps underline-link" href="https://maps.google.com/maps?q=433+Chestnut+Street,+Philadelphia+Pennsylvania&hl=en&t=v&hnear=433+Chestnut+Street,+Philadelphia+Pennsylvania">Open Map</a>
+                            </em>
+                        </small>*@
                     <div class="row">
                         <p>
                             <div class="col-sm-6 text-right text-color">Sunday Night</div>
@@ -457,7 +457,7 @@
                             <div class="col-sm-6 text-left">2 queen bed room ($219 + tax)</div>
                         </p>
                     </div>
-                    
+
                     <div class="row">
                         <p>
                             <div class="col-sm-6 text-right text-color">Saturday Night</div>
@@ -466,17 +466,17 @@
                             <div class="col-sm-6 text-left">2 queen bed room ($289 + tax)</div>
                         </p>
                     </div>
-                <div class="row">
-                    <a class="btn btn-default" href="https://gc.synxis.com/rez.aspx?Hotel=56524&Chain=10179&Dest=PHILLY&locale=en-US&arrive=5/27/2017&depart=5/29/2017&adult=1&child=0&group=20000704336">
-                        Book
-                    </a>
-                </div>
+                    <div class="row">
+                        <a class="btn btn-default" href="https://gc.synxis.com/rez.aspx?Hotel=56524&Chain=10179&Dest=PHILLY&locale=en-US&arrive=5/27/2017&depart=5/29/2017&adult=1&child=0&group=20000704336">
+                            Book
+                        </a>
+                    </div>
 
                     @*<h3 class="section-sub-title text-color">Sunday Night (our wedding night)</h3>
-                    <h4>Single king room ($199 + tax), 2 queen bed room ($219 + tax)</h4>
+                        <h4>Single king room ($199 + tax), 2 queen bed room ($219 + tax)</h4>
 
-                    <h3 class="section-sub-title text-color">Saturday Night (if you want to come to the wedding-eve party or just explore Philly!)</h3>
-                    <h4>Single king room ($269 + tax), 2 queen bed room ($289 + tax)</h4>*@
+                        <h3 class="section-sub-title text-color">Saturday Night (if you want to come to the wedding-eve party or just explore Philly!)</h3>
+                        <h4>Single king room ($269 + tax), 2 queen bed room ($289 + tax)</h4>*@
                 </div><!-- /.column -->
             </div><!-- /.row -->
 
@@ -498,7 +498,7 @@
 
             <div class="row">
                 <a class="zola-registry-embed" href="https://www.zola.com/registry/maryplusjim" data-registry-key="maryplusjim">Our Zola Wedding Registry</a>
-                <script>!function(e,t,n){var s,a=e.getElementsByTagName(t)[0];e.getElementById(n)||(s=e.createElement(t),s.id=n,s.async=!0,s.src="https://widget.zola.com/js/widget.js",a.parentNode.insertBefore(s,a))}(document,"script","zola-wjs");</script>
+                <script>!function (e, t, n) { var s, a = e.getElementsByTagName(t)[0]; e.getElementById(n) || (s = e.createElement(t), s.id = n, s.async = !0, s.src = "https://widget.zola.com/js/widget.js", a.parentNode.insertBefore(s, a)) }(document, "script", "zola-wjs");</script>
             </div>
             <div class="row">
                 <!-- Content -->
@@ -506,17 +506,17 @@
                     <!-- Logos -->
                     @*<h2 class="section-venue-title bottomReveal"><em>Coming soon!</em></h2>*@
                     @*<a href="https://www.honeyfund.com/wedding/MaryPlusJim#r"><img src="~/images/honeyfund.png" class="img-responsive registry-logo leftReveal" alt="..."></a>*@
-                   
+
                     @*<a href="#"><img src="~/images/logo-2.png" class="img-responsive registry-logo bottomReveal" alt="..."></a>
-                    <a href="#"><img src="~/images/logo-3.png" class="img-responsive registry-logo rightReveal" alt="..."></a>
-                    <hr class="hr-small mt50 mb50">*@
+                        <a href="#"><img src="~/images/logo-3.png" class="img-responsive registry-logo rightReveal" alt="..."></a>
+                        <hr class="hr-small mt50 mb50">*@
 
                     <!-- More Options -->
                     @*<h3 class="section-sub-title text-color">More Options</h3>
-                    <h2 class="section-venue-title bottomReveal">Check</h2>
-                    <p class="no-margin bottomReveal">Hand deliver us a check.</p>
-                    <h2 class="section-venue-title bottomReveal">Paypal</h2>
-                    <p class="no-margin bottomReveal">You can send a little something <a class="color-link underline-link" href="http://paypal.com" target="_blank">here</a>.</p>*@
+                        <h2 class="section-venue-title bottomReveal">Check</h2>
+                        <p class="no-margin bottomReveal">Hand deliver us a check.</p>
+                        <h2 class="section-venue-title bottomReveal">Paypal</h2>
+                        <p class="no-margin bottomReveal">You can send a little something <a class="color-link underline-link" href="http://paypal.com" target="_blank">here</a>.</p>*@
                 </div><!-- /.column -->
             </div><!-- /.row -->
 
@@ -680,5 +680,17 @@
     <script type="text/javascript" src="~/js/style-switcher.js"></script>
     <script type="text/javascript" src="~/js/scrollreveal.min.js"></script>
     <script type="text/javascript" src="~/js/main.js"></script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-91053890-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
 </body>
 </html>
